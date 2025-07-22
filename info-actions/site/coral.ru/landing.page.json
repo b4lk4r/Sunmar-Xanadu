@@ -1,0 +1,12 @@
+{
+  "env": {
+    "brand": "coral-next",
+    "cdnAssetsURL": "//b2ccdn.coral.ru/content/landing-pages/info-actions"
+  },
+  "sections": [
+    "site/coral.ru/markup/global.html",
+    "site/coral.ru/markup/kv.html",
+    "site/coral.ru/markup/text.html",
+    "site/coral.ru/markup/contacts.html"
+  ]
+}

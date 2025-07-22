@@ -1,0 +1,162 @@
+@use "sass:selector";
+@use 'variables';
+
+@mixin kv-aspect-ratio {
+  aspect-ratio: var(--ratio-428);
+  @media (min-width: 768px) {
+    aspect-ratio: var(--ratio-768);
+  }
+  @media (min-width: 1024px) {
+    aspect-ratio: var(--ratio-1024);
+  }
+  @media (min-width: 1280px) {
+    aspect-ratio: var(--ratio-1280);
+  }
+  @media (min-width: 1440px) {
+    aspect-ratio: var(--ratio-1440);
+  }
+}
+
+@mixin hero-layout {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  padding-block: calc(var(--padding_XXXL) / 2);
+}
+
+@mixin hero-layout-full-width {
+  position: relative;
+
+  > article .contenu {
+    z-index: 2;
+    position: relative;
+  }
+
+  &:after {
+    content: '';
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}
+
+@mixin vimeo-responsive {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+
+  .vimeo-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s ease;
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .vimeo-player.playback {
+    opacity: 1;
+  }
+}
+
+@mixin scale-iframe($scale: 1.1) {
+  transform: scale($scale);
+  transform-origin: center;
+  display: block;
+}
+
+@mixin flex-grid($elements, $gap, $justify) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+  justify-content: $justify;
+
+  > * {
+    width: calc((100% - ($elements - 1) * $gap) / $elements);
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin ruble {
+  &::after {
+    content: "₽";
+    margin-left: 5px;
+  }
+}
+
+/*
+Миксин для установки тега к классу
+$child - задаем тег, для которого хотим повысить специфичность
+пример: &__link {} - хотим добавить 'a' вначале правила и получить a.text__link {}
+делаем так: &__link { @include(parentTag)(a) {} }
+получаем: a.text__link {}
+*/
+@mixin parentTag($child) {
+  @at-root #{selector.unify(&, $child)} {
+    @content;
+  }
+}
+
+
+/* Миксин медиазапроса с использованием CSS custom properties
+Использует @media (min-width: ...)
+@param {String} $breakpoint — ключ одного из брейкпоинтов:
+- md:   768px
+- lg:  1024px
+- xl:  1280px
+- 2xl: 1440px
+*/
+
+@mixin respond-up($breakpoint) {
+  @if $breakpoint == md {
+    @media (min-width: variables.$screen-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (min-width: variables.$screen-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (min-width: variables.$screen-xl) {
+      @content;
+    }
+  } @else if $breakpoint == 2xl {
+    @media (min-width: variables.$screen-2xl) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}";
+  }
+}
+
+/* Базовый псевдоэлемент ::before или ::after
+@param {String} $side - 'before' или 'after'
+*/
+@mixin pseudo($side) {
+  position: relative;
+  &::#{$side} {
+    content: '';
+    position: absolute;
+    display: block;
+  }
+}

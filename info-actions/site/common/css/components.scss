@@ -1,0 +1,108 @@
+section.hero > article .contenu {
+  .prime-btn {
+    border-radius: 48px;
+    background-color: var(--color_Btn_Bg_Default);
+    height: 48px;
+    padding: 12px 20px;
+    border: none;
+    color: var(--color_Text_Light);
+    font-size: var(--font_Size_Body);
+    cursor: pointer;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color var(--transition);
+
+    @media(hover: hover) {
+      &:hover {
+        background-color: var(--color_Btn_Bg_Hover);
+      }
+    }
+
+    &:active {
+      background-color: var(--color_Btn_Bg_Pressed);
+    }
+
+    &:focus-visible {
+      background-color: var(--color_Btn_Bg_Focused);
+      outline: 1px solid var(--color_Btn_Border_Focused);
+    }
+
+    &:disabled {
+      background-color: var(--color_Btn_Bg_Disabled);
+    }
+  }
+
+  .prime-btn.light {
+    background-color: var(--color_Btn_Bg_Alt);
+    color: var(--color_Btn_Text_Alt);
+    border: 1px solid var(--color_Btn_Bg_Alt);
+    transition: border-color var(--transition), color var(--transition);
+
+    @media(hover: hover) {
+      &:hover {
+        border-color: var(--color_Btn_Bg_Hover);
+        color: var(--color_Btn_Bg_Hover)
+      }
+    }
+
+    &:active {
+      border-color: var(--color_Btn_Border_Pressed);
+      color: var(--color_Btn_Border_Pressed);
+    }
+
+    &:focus-visible {
+      border-color: var(--color_Btn_Border_Focused);
+      outline: 1px solid var(--color_Btn_Border_Focused);
+    }
+  }
+
+  .prime-btn.ghost {
+    border: 1px solid var(--color_Btn_Border_Ghost_Default);
+    background: transparent;
+    color: var(--color_Text_Dark);
+    transition: border-color var(--transition), color var(--transition);
+
+    @media(hover: hover) {
+      &:hover {
+        border-color: var(--color_Btn_Bg_Hover);
+        color: var(--color_Btn_Bg_Hover)
+      }
+    }
+
+    &:active {
+      border-color: var(--color_Btn_Border_Pressed);
+      color: var(--color_Btn_Border_Pressed);
+    }
+
+    &:focus-visible {
+      border-color: var(--color_Btn_Border_Focused);
+      outline: 1px solid var(--color_Btn_Border_Focused);
+    }
+  }
+
+  .prime-link {
+    font-size: var(--font_Size_Body);
+    color: var(--color_Btn_Bg_Default);
+    transition: color var(--transition);
+
+    @media(hover: hover) {
+      &:hover {
+        color: var(--color_Btn_Bg_Hover);
+      }
+    }
+
+    &:active {
+      color: var(--color_Btn_Bg_Pressed);
+    }
+
+    &:focus-visible {
+      color: var(--color_Btn_Text_Ghost_Focused);
+      text-decoration: underline;
+    }
+
+    &:disabled {
+      color: var(--color_Text_Dark);
+    }
+  }
+}

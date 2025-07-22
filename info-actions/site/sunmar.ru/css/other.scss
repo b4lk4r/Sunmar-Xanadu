@@ -1,0 +1,203 @@
+* {
+  box-sizing: border-box;
+}
+
+.start-text{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.title-start-text{
+    color: var(--Black, rgba(0, 0, 0, 0.88));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    // 
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 0;
+}
+
+.descr-start-text{
+    color: var(--Black, #232323);
+    text-align: center;
+    // 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0;
+}
+
+
+
+.location{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-location{
+    color: var(--Black, rgba(0, 0, 0, 0.88));
+    text-align: center;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 0;
+}
+
+.info-location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 40px 0px rgba(20, 20, 22, 0.10);
+}
+
+.media-info-location{
+    width: 50%;
+    height: 100%;
+    background: url(../assets/intro-bg-desktop.png);
+    border-radius: 15px;
+}
+
+.text-info-location{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.country-text-info-location{
+    color: var(--Black, rgba(0, 0, 0, 0.88));
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    margin: 0 0;
+}
+
+.variant-text-info-location{
+    color: var(--Black, #232323);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0;
+}
+
+.city-text-info-location{
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to bottom, #E7317D, #D8242A);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0 0;
+}
+
+.hotel{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.text-location{
+    color: var(--Black, rgba(0, 0, 0, 0.88));
+    text-align: center;
+    
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 0;
+}
+
+.info-hotel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 260px;
+    gap: 20px;
+    box-shadow: 0px 0px 40px 0px rgba(20, 20, 22, 0.10);
+    border-radius: 12px;
+}
+
+.media-info-hotel{
+    width: 30%;
+    height: 100%;
+    background: url(../assets/sevenSeasHotel.png);
+    border-radius: 15px;
+}
+
+.text-info-hotel{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.title-text-info-hotel{
+    color: #000;
+font-feature-settings: 'liga' off, 'clig' off;
+
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+margin: 0 0;
+}
+
+.pod-text-info-hotel{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-podtext{
+    color: var(--Black, rgba(0, 0, 0, 0.88));
+font-feature-settings: 'liga' off, 'clig' off;
+
+font-size: 14px;
+font-style: normal;
+font-weight: 300;
+line-height: 20px;
+}
+
+.logo-container{
+    width: 128px;
+    height: 97px;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 20px 20px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}

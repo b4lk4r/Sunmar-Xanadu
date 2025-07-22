@@ -1,0 +1,264 @@
+:root {
+  /* === Цвета === */
+  --color_Base_Light: #ffffff;
+  --color_Base_Light_Alt: #f3f9ff;
+  --color_Base_Item_Overlay: rgba(0, 0, 0, .50);
+  --color_Base_Hr_Break: rgba(0, 0, 0, .4);
+  --color_Base_Item_Bg_1: #c2e4f6;
+  --color_Base_Item_Bg_2: #f2dfd5;
+  --color_Base_Item_Bg_3: #f7eddb;
+  --color_Base_Item_Bg_4: #d2e9fb;
+  --color_Base_Dark: #000000;
+  --color_Header_Text: #b2b2b2;
+  --color_Header_Icon: #535353;
+  --color_Header_Border: #d9d9d9;
+  --color_Header_Item_Bg: rgba(255, 255, 255, 0);
+  --color_Header_Bg_Elevation_Level_1: #f9f3ff;
+  --color_Header_Bg_Elevation_Level_2: #ffffff;
+  --color_Header_Bg_Elevation_Level_3: #ffffff;
+  --color_Header_Bg_Elevation_Level_4: #f2f2f2;
+  --color_Header_Bg_Elevation_Level_5: #ffffff;
+  --color_Header_Form_Icon_Light: #ffffff;
+  --color_Header_Form_Checkbox_Border: #d9d9d9;
+  --color_Header_Tabs_Accent: #0092d0;
+  --color_Header_Tabs_Hover: #33c2ff;
+  --color_toggler_Bg: #bfbfbf;
+  --color_toggler_Main: #ffffff;
+  --color_Header_Range_Bg: #f5f5f5;
+  --color_Header_Range_Border_Pressed: #007db1;
+  --color_Header_Text_Disabled: #b2b2b2;
+  --color_Header_Bg_Accent: #fef7e6;
+  --color_Header_Bg_Accent_Alt: #e6f4ff;
+  --color_Header_Icon_Accent: #f9b515;
+  --color_Header_Bg_Selected: #e6f4ff;
+  --color_Header_Bg_Regular: #fcdf9c;
+  --color_Header_Bg_Charter: #d9f7be;
+  --color_Header_Date_Accent: #006b99;
+  --color_Header_Bottom_Icons: #0092d0;
+  --color_Text_Dark: #000000;
+  --color_Text_Light: #ffffff;
+  --color_Text_Alt: rgba(0, 0, 0, .85);
+  --color_Text_Highlight: #0092d0;
+  --color_Btn_Bg_Default: #0092d0;
+  --color_Btn_Text_Light: #ffffff;
+  --color_Btn_Text_Dark: #000000;
+  --color_Btn_Bg_Hover: #077dad;
+  --color_Btn_Bg_Focused: #33c2ff;
+  --color_Btn_Border_Focused: #0092d0;
+  --color_Btn_Text_Disabled: rgba(0, 0, 0, .25);
+  --color_Btn_Bg_Pressed: #0063b3;
+  --color_Btn_Bg_Disabled: rgba(0, 0, 0, .4);
+  --color_Btn_Border_Disabled: rgba(0, 0, 0, .15);
+  --color_Btn_Border_Ghost_Default: rgba(0, 0, 0, .15);
+  --color_Btn_Border_Ghost_Hover: #077dad;
+  --color_Btn_Border_Ghost_Pressed: #0063b3;
+  --color_Btn_Text_Ghost_Hover: #077dad;
+  --color_Btn_Text_Ghost_Focused: #33c2ff;
+  --color_Btn_Text_Ghost_Pressed: #0063b3;
+  --color_Btn_Bg_Alt: #ffffff;
+  --color_Btn_Text_Alt: #000000;
+  --color_Btn_Text_Clear: #0092d0;
+  --color_Btn_Border_Clear_Focused: #33c2ff;
+  --color_Btn_Border_Pressed: #0063b3;
+  --color_Arrow_Active: #535353;
+  --color_Arrow_Hover: #33c2ff;
+  --color_Arrow_Disabled: rgba(0, 0, 0, .15);
+  --color_Arrow_Border_Disabled: rgba(0, 0, 0, .15);
+  --color_Arrow_Bg_Light: #ffffff;
+  --color_Tabs_Bg_Active: #e84f0e;
+  --color_Tabs_Text_Dark: #000000;
+  --color_Tabs_Text_Light: #ffffff;
+  --color_Pagination_Bg_Active: #077dad;
+  --color_Pagination_Bg_Default: rgba(51, 194, 255, .30);
+  --color_Pagination_Bg_Hover: #33c2ff;
+  --color_Brand_Pacific_Blue: #0093d0;
+  --color_Brand_Logo_Text: #0093d0;
+  --color_Brand_Logo_Mark_1: #ee762d;
+  --color_Brand_Logo_Mark_2: #fdce86;
+  --color_Brand_Logo_Mark_3: #fab60d;
+  --color_Brand_Logo_Mark_4: #e84e0f;
+  --color_Brand_Logo_Mark_5: #78abdc;
+  --color_Brand_Logo_Mark_6: #0077b1;
+  /* === Радиусы === */
+  --border_Radius_Button: 8px;
+  --border_Radius_XXXL: 48px;
+  --border_Radius_XXL: 40px;
+  --border_Radius_XL: 32px;
+  --border_Radius_LG: 24px;
+  --border_Radius_MD: 20px;
+  --border_Radius_Base: 16px;
+  --border_Radius_SM: 12px;
+  --border_Radius_XXS: 4px;
+  --border_Radius_XXXS: 2px;
+  /* === Отступы (паддинги) === */
+  --padding_XXXXL: 64px;
+  --padding_XXXL: 48px;
+  --padding_XXL: 40px;
+  --padding_XL: 32px;
+  --padding_LG: 24px;
+  --padding_MD: 20px;
+  --padding_Base: 16px;
+  --padding_SM: 12px;
+  --paddingXS: 8px;
+  --paddingXXS: 4px;
+  --paddingXXXS: 2px;
+  /* === Отступы (маржины) === */
+  --margin_XXXL: 48px;
+  --margin_XXL: 40px;
+  --margin_XL: 32px;
+  --margin_LG: 24px;
+  --margin_MD: 20px;
+  --margin_Base: 16px;
+  --margin_SM: 12px;
+  --margin_XS: 8px;
+  --margin_XXS: 4px;
+  --margin_XXXS: 2px;
+  /* === Сетка === */
+  --screen-sm: 428px; // mobile
+  --screen-md: 768px; // tablet (portrait)
+  --screen-lg: 1024px; // tablet (landscape) / small laptop
+  --screen-xl: 1280px; // desktop
+  --screen-2xl: 1440px;
+  --grid_desktop_L_content: 1368px;
+  --grid_desktop_S_content: 1104px;
+  --grid_tablet_H_content: 864px;
+  --grid_tablet_V_content: 608px;
+  --grid_mobile_content: 396px;
+  /* === Шрифты === */
+  --font_Line_Height_Heading_1: 44px;
+  --font_Line_Height_Heading_2: 40px;
+  --font_Line_Height_Heading_3: 36px;
+  --font_Line_Height_Heading_4: 32px;
+  --font_Line_Height_Heading_5: 28px;
+  --font_Line_Height_Body: 24px;
+  --font_Line_Height_label: 20px;
+  --font_Size_KV_Title_L: 56px;
+  --font_Size_KV_Title_M: 40px;
+  --font_Size_KV_Title_S: 32px;
+  --font_Size_KV_Placeholder_L: 24px;
+  --font_Size_KV_Placeholder_M: 20px;
+  --font_Size_KV_Subline_L: 20px;
+  --font_Size_KV_Subline_M: 16px;
+  --font_Line_Height_KV_Title_L: 64px;
+  --font_Line_Height_KV_Title_M: 48px;
+  --font_Line_Height_KV_Title_S: 40px;
+  --font_Line_Height_KV_Placeholder_L: 32px;
+  --font_Line_Height_KV_Placeholder_M: 28px;
+  --font_Line_Height_KV_Subline_L: 28px;
+  --font_Line_Height_KV_Subline_M: 24px;
+  --font_Size_Label: 12px;
+  --font_Size_Body: 16px;
+  --font_Size_Heading_1: 36px;
+  --font_Size_Heading_2: 32px;
+  --font_Size_Heading_3: 28px;
+  --font_Size_Heading_4: 24px;
+  --font_Size_Heading_5: 20px;
+  --font_Size_Heading_6: 20px;
+  --font_Size_Btn: 16px;
+  --font_Size_Tabs: 16px;
+  --font_Weight_Regular: 400;
+  --font_Weight_Medium: 500;
+  --font_Weight_Semibold: 600;
+  --font_Weight_Bold: 700;
+  --font_Weight_Extrabold: 800;
+  /* === Пропорции === */
+  --ratio-1440: 171/65;
+  --ratio-1280: 8/3;
+  --ratio-1024: 216/95;
+  --ratio-768: 19/10;
+  --ratio-428: 99/130;
+
+  /* === Транзишены === */
+  --transition: 300ms ease;
+}
+
+$screen-sm: 428px; // mobile
+$screen-md: 768px; // tablet (portrait)
+$screen-lg: 1024px; // tablet (landscape) / small laptop
+$screen-xl: 1280px; // desktop
+$screen-2xl: 1440px;
+
+//@media (prefers-color-scheme: dark) {
+//  :root {
+//    /* === Цвета === */
+//    --color_Base_Light: #24242c;
+//    --color_Base_Light_Alt: #121212;
+//    --color_Base_Item_Overlay: rgba(0, 0, 0, 50);
+//    --color_Base_Hr_Break: rgba(255, 255, 255, 10);
+//    --color_Base_Item_Bg_1: #124b78;
+//    --color_Base_Item_Bg_2: #396384;
+//    --color_Base_Item_Bg_3: #506a7e;
+//    --color_Base_Item_Bg_4: #124b78;
+//    --color_Base_Dark: #124b78;
+//    --color_Header_Text: #b2b2b2;
+//    --color_Header_Icon: #efefef;
+//    --color_Header_Border: #24242c;
+//    --color_Header_Item_Bg: #3a3a41;
+//    --color_Header_Bg_Elevation_Level_1: #121212;
+//    --color_Header_Bg_Elevation_Level_2: #24242c;
+//    --color_Header_Bg_Elevation_Level_3: #363642;
+//    --color_Header_Bg_Elevation_Level_4: #444454;
+//    --color_Header_Bg_Elevation_Level_5: #525266;
+//    --color_Header_Form_Icon_Light: #ffffff;
+//    --color_Header_Form_Checkbox_Border: #ffffff;
+//    --color_Header_Tabs_Accent: #1668dc;
+//    --color_Header_Tabs_Hover: #0092d0;
+//    --color_toggler_Bg: #1668dc;
+//    --color_toggler_Main: #ffffff;
+//    --color_Header_Range_Bg: #363642;
+//    --color_Header_Range_Border_Pressed: #ffffff;
+//    --color_Header_Text_Disabled: #121212;
+//    --color_Header_Bg_Accent: #525266;
+//    --color_Header_Bg_Accent_Alt: #444454;
+//    --color_Header_Icon_Accent: #f9b515;
+//    --color_Header_Bg_Selected: #1668dc;
+//    --color_Header_Bg_Regular: #fcdf9c;
+//    --color_Header_Bg_Charter: #d9f7be;
+//    --color_Header_Date_Accent: #33c2ff;
+//    --color_Header_Bottom_Icons: #1668dc;
+//    --color_Text_Dark: #ffffff;
+//    --color_Text_Light: #ffffff;
+//    --color_Text_Alt: rgba(255, 255, 255, 85);
+//    --color_Text_Highlight: #33c2ff;
+//    --color_Btn_Bg_Default: #1668dc;
+//    --color_Btn_Text_Light: #ffffff;
+//    --color_Btn_Text_Dark: rgba(255, 255, 255, 85);
+//    --color_Btn_Bg_Hover: #0092d0;
+//    --color_Btn_Bg_Focused: #33c2ff;
+//    --color_Btn_Border_Focused: #1668dc;
+//    --color_Btn_Text_Disabled: rgba(255, 255, 255, 40);
+//    --color_Btn_Bg_Pressed: #077dad;
+//    --color_Btn_Bg_Disabled: rgba(255, 255, 255, 10);
+//    --color_Btn_Border_Disabled: rgba(255, 255, 255, 40);
+//    --color_Btn_Border_Ghost_Default: rgba(255, 255, 255, 85);
+//    --color_Btn_Border_Ghost_Hover: #0092d0;
+//    --color_Btn_Border_Ghost_Pressed: #077dad;
+//    --color_Btn_Text_Ghost_Hover: #0092d0;
+//    --color_Btn_Text_Ghost_Focused: #33c2ff;
+//    --color_Btn_Text_Ghost_Pressed: #077dad;
+//    --color_Btn_Bg_Alt: #ffffff;
+//    --color_Btn_Text_Alt: rgba(0, 0, 0, 85);
+//    --color_Btn_Text_Clear: #1668dc;
+//    --color_Btn_Border_Clear_Focused: #33c2ff;
+//    --color_Btn_Border_Pressed: #077dad;
+//    --color_Arrow_Active: #535353;
+//    --color_Arrow_Hover: #33c2ff;
+//    --color_Arrow_Disabled: rgba(255, 255, 255, 40);
+//    --color_Arrow_Border_Disabled: rgba(255, 255, 255, 40);
+//    --color_Arrow_Bg_Light: #ffffff;
+//    --color_Tabs_Bg_Active: #ee762d;
+//    --color_Tabs_Text_Dark: #ffffff;
+//    --color_Tabs_Text_Light: #ffffff;
+//    --color_Pagination_Bg_Active: #ffffff;
+//    --color_Pagination_Bg_Default: rgba(255, 255, 255, 30);
+//    --color_Pagination_Bg_Hover: #33c2ff;
+//    --color_Brand_Pacific_Blue: #0093d0;
+//    --color_Brand_Logo_Text: #ffffff;
+//    --color_Brand_Logo_Mark_1: #ee762d;
+//    --color_Brand_Logo_Mark_2: #fdce86;
+//    --color_Brand_Logo_Mark_3: #fab60d;
+//    --color_Brand_Logo_Mark_4: #e84e0f;
+//    --color_Brand_Logo_Mark_5: #78abdc;
+//    --color_Brand_Logo_Mark_6: #0077b1;
+//  }
+//}
