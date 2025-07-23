@@ -26,7 +26,7 @@
 
 .title-text-banner{
     color: #FFF;
-    font-family: Museo Sans Cyrl;
+    font-family: inherit;
     font-size: 56px;
     font-style: normal;
     font-weight: 600;
@@ -36,10 +36,74 @@
 
 .desc-text-banner{
     color: #FFF;
-    font-family: Museo Sans Cyrl;
+    font-family: inherit;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
     margin: 0 0;
+}
+
+
+
+@media (min-width: 1280px) and (max-width: 1439.98px) {
+    .banner{
+        padding: 0 100px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+   .banner{
+        padding: 0 80px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .banner{
+        height: 350px;
+        padding: 0 50px;
+    }
+
+    .text-banner{
+        gap: 10px;
+    }
+
+    .title-text-banner {
+        font-size: 48px;
+        line-height: 50px;
+    }
+
+    .desc-text-banner {
+        font-size: 18px;
+        line-height: 20px;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+   .banner{
+        background-size: 148% 500px;
+        background-repeat: no-repeat;
+        background-position: -180px 0px;
+        height: 500px;
+        padding: 48px 30px;
+        align-items: flex-start;
+    }
+
+    .text-banner{
+        gap: 10px;
+    }
+
+    .title-text-banner {
+        font-size: 36px;
+        line-height: 38px;
+    }
+
+    .desc-text-banner {
+        font-size: 16px;
+        line-height: 20px;
+    }
 }
