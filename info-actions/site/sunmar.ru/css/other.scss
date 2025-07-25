@@ -14,7 +14,6 @@
     color: var(--Black, rgba(0, 0, 0, 0.88));
     text-align: center;
     font-feature-settings: 'liga' off, 'clig' off;
-    // 
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -25,7 +24,6 @@
 .descr-start-text{
     color: var(--Black, #232323);
     text-align: center;
-    // 
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -45,8 +43,7 @@
 
 .text-location{
     color: var(--Black, rgba(0, 0, 0, 0.88));
-    text-align: center;
-    
+    text-align: center;   
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -81,8 +78,7 @@
 .country-text-info-location{
     color: var(--Black, rgba(0, 0, 0, 0.88));
     text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
+    font-feature-settings: 'liga' off, 'clig' off;   
     font-size: 32px;
     font-style: normal;
     font-weight: 600;
@@ -93,8 +89,7 @@
 .variant-text-info-location{
     color: var(--Black, #232323);
     text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
+    font-feature-settings: 'liga' off, 'clig' off;    
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -108,8 +103,7 @@
 	background-clip: text;
 	background-image: linear-gradient(to bottom, #E7317D, #D8242A);
     text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    
+    font-feature-settings: 'liga' off, 'clig' off;   
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
@@ -127,8 +121,7 @@
 
 .text-location{
     color: var(--Black, rgba(0, 0, 0, 0.88));
-    text-align: center;
-    
+    text-align: center; 
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -141,7 +134,7 @@
     flex-direction: row;
     align-items: center;
     width: 100%;
-    height: 260px;
+    height: 425px;
     gap: 20px;
     box-shadow: 0px 0px 40px 0px rgba(20, 20, 22, 0.10);
     border-radius: 12px;
@@ -151,42 +144,47 @@
     width: 36%;
     height: 100%;
     background: url(../assets/sevenSeasHotel.png);
+    background-size: cover;
     border-radius: 15px;
+    background-position-x: -200px;
 }
 
 .text-info-hotel{
-    width: 70%;
+    width: 64%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding: 50px;
+    gap: 20px;
 }
 
 .title-text-info-hotel{
     color: #000;
-font-feature-settings: 'liga' off, 'clig' off;
-
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-line-height: 24px;
-margin: 0 0;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 0 0;
 }
 
 .pod-text-info-hotel{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
 }
 
+
 .content-podtext{
     color: var(--Black, rgba(0, 0, 0, 0.88));
-font-feature-settings: 'liga' off, 'clig' off;
-
-font-size: 14px;
-font-style: normal;
-font-weight: 300;
-line-height: 20px;
+    font-feature-settings: 'liga' off, 'clig' off;
+    margin: 0 0;
+    font-family: inherit;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
 }
 
 .logo-container{
@@ -202,4 +200,57 @@ line-height: 20px;
     background: url(../assets/sevenSeasLogo.svg);
     width: 100%;
     height: 100%;
+}
+
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+    .title-start-text{
+        font-size: 36px;
+    }
+
+    .text-location{
+        font-size: 36px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+    .title-start-text{
+        font-size: 34px;
+    }
+
+    .text-location{
+        font-size: 34px;
+    }
+
+    .media-info-location{
+        width: 60%;
+    }
+
+    .text-info-location{
+        width: 40%;
+    }
+
+    .info-hotel{
+        flex-direction: column;
+        height: 642px;
+    }
+
+    .media-info-hotel{
+        width: 100%;
+        height: 299px;
+        background-size: cover;
+    }
+
+    .text-info-hotel{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    
 }
